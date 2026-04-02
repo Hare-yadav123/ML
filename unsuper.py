@@ -27,13 +27,13 @@ with st.form('my-form'):
 
     if prediction[0] == 0:
         st.write('sorry! You could not placed')
-    elif prediction[0] == 1 or prediction[0] == 2 or prediction[0] ==3 or prediction[0] ==4:
+    elif prediction[0] == 1 or prediction[0] == 2 or prediction[0] == 3 or prediction[0] == 4:
         st.write('placed')
-    elif prediction[0] ==5:
+    elif prediction[0] == 5:
         st.write('60 to 70 percent chance to place')
-    elif prediction[0] ==6:
+    elif prediction[0] == 6:
         st.write('may be')
-    elif prediction[0] ==7 or prediction[0] ==8 or prediction[0]==9:
+    elif prediction[0] == 7 or prediction[0] ==8 or prediction[0]== 9:
         st.write('out of placement criteria')
     else:
         st.write('Try Next time')
@@ -43,4 +43,3 @@ centers = scaler.inverse_transform(model.cluster_centers_)
 fig, ax = plt.subplots()
 ax.scatter(centers[:,0], centers[:,1], marker='o', s=200)
 st.pyplot(fig)
-

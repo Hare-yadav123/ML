@@ -1,7 +1,4 @@
-import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
 import streamlit as st
 import pickle
 
@@ -38,8 +35,3 @@ with st.form('my-form'):
         else:
             st.write('Try Next time')
 
-centers = scaler.inverse_transform(model.cluster_centers_)
-
-fig, ax = plt.subplots()
-ax.scatter(centers[:,0], centers[:,1], marker='o', s=200)
-st.pyplot(fig)

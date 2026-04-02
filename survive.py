@@ -3,10 +3,10 @@ import streamlit as st
 import pandas as pd 
 
 try:
-    model = pickle.load(open('modelusersurvive.pk1','rb'))
+    model = pickle.load(open('modelusersurvive.pk','rb'))
 except Exception as e:
-    print(e)
-    
+    st.error(f'error is {e}')
+
 st.title('model for survive prediction')
 
 Pclass = st.number_input('Pclass')

@@ -1,10 +1,8 @@
 import pickle
 import streamlit as st 
 import pandas as pd 
-# loading the saved models 
 
 model = pickle.load(open('modelusersurvive.pk1','rb'))
-# creating the function for web app
 
 st.title('model for survive prediction')
 
@@ -34,30 +32,3 @@ if st.button('predict'):
     else:
         st.success("Not survived")
 
-# if st.button('Predict'):
-#     input_data = pd.DataFrame([{
-#         'Pclass': Pclass,
-#         'Age': Age,
-#         'SibSp': SibSp,
-#         'Parch': Parch,
-#         'Fare': Fare,
-#         'Sex': Sex,
-#         'Embarked': Embarked
-#     }])
-
-#     # 👉 Encoding (example)
-#     input_data = pd.get_dummies(input_data)
-
-#     # 👉 Align with training columns
-#     input_data = input_data.reindex(columns=model.feature_names_in_, fill_value=0)
-
-#     # 👉 Scaling (if used)
-#     input_data = model.transform(input_data)
-
-#     # 👉 Prediction
-#     prediction = model.predict(input_data)
-
-#     if prediction[0] == 1:
-#         st.success("Survived ✅")
-#     else:
-#         st.error("Not Survived ❌")

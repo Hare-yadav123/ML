@@ -17,7 +17,7 @@ SibSp1 = sorted(df['SibSp'].unique())
 Parch1 = sorted(df['Parch'].unique())
 Fare1 = sorted(df['Fare'].unique())
 Sex1 = sorted(df['Sex'].unique())
-Embarked1 = sorted(df['Embarked1'].unique())
+Embarked1 = sorted(df['Embarked'].unique())
 
 Pclass = st.selectbox('Pclass1',Pclass1)
 Age = st.selectbox('Age1',Age1)

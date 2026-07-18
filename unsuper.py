@@ -2,7 +2,7 @@ import numpy as np
 import streamlit as st
 import pickle
 
-st.title('Unsupervise ML Application')
+st.title('Unsupervise ML Application for student placement prediction')
 
 model = pickle.load(open('unmodel.pkl','rb'))
 scaler = pickle.load(open('unscaler.pkl','rb'))

@@ -2,7 +2,7 @@ import pickle
 import streamlit as st 
 import pandas as pd 
 
-df = pd.read_csv('titanic.csv')
+df = pd.read_csv('train.csv')
 
 try:
     model = pickle.load(open('modelusersurvive.pk','rb'))

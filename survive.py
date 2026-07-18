@@ -11,21 +11,21 @@ except Exception as e:
 
 st.title('model for survive prediction')
 
-Pclass1 = sorted(df['Pclass'].unique())
-Age1 = sorted(df['Age'].unique())
-SibSp1 = sorted(df['SibSp'].unique())
-Parch1 = sorted(df['Parch'].unique())
-Fare1 = sorted(df['Fare'].unique())
-Sex1 = sorted(df['Sex'].unique())
-Embarked1 = sorted(df['Embarked'].dropna().unique())
+P_class = sorted(df['Pclass'].unique())
+P_Age = sorted(df['Age'].unique())
+P_SibSp = sorted(df['SibSp'].unique())
+P_Parch = sorted(df['Parch'].unique())
+P_Fare = sorted(df['Fare'].unique())
+P_Sex = sorted(df['Sex'].unique())
+p_Embarked = sorted(df['Embarked'].dropna().unique())
 
-Pclass = st.selectbox('Pclass1',Pclass1)
-Age = st.selectbox('Age1',Age1)
-SibSp = st.selectbox('sibSp1',SibSp1)
-Parch = st.selectbox('Parch1',Parch1)
-Fare = st.selectbox('Fare1',Fare1)
-Sex = st.selectbox('Sex1',Sex1)
-Embarked = st.selectbox('Embarked1',Embarked1)
+Pclass = st.selectbox('P_class',P_class)
+Age = st.selectbox('P_Age',P_Age)
+SibSp = st.selectbox('P_SibSp',P_SibSp)
+Parch = st.selectbox('P_Parch',P_Parch)
+Fare = st.selectbox('P_Fare',P_Fare)
+Sex = st.selectbox('P_Sex',P_Sex)
+Embarked = st.selectbox('P_Embarked',p_Embarked)
 
 
 
